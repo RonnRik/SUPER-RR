@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL WEBSITE</title>
+    <link rel="Stylesheet" href="RR.css">
+    <link rel="icon" href="RR LOGO.jpg" />
+    <script src="https://kit.fontawesome.com/b13e507b6c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="background">
+        <nav id="navbar">
+            <img src="RR LOGO.jpg" class="logo">
+            <ul id="settings">
+                <li><a href="">HOME</a></li>
+                <li><a href="About me.html">ABOUT ME</a></li>
+                <li><a href="Services.html">SERVICES</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <h4>Hello, My Name is </h4>
+        <h1>Ron Rick Furigay</h1>
+        <h3>I am a Web Developer</h3>
+        <div class="newslatter">
+            <form>
+                <input type="email" name="Email" id="mail" placeholder="Let's Be Friends">
+                <input type="submit" name="submit" value="Add Email">
+            </form>
+        </div>
+    </div>
+
+    <!----about section start---->
+    <section class="about">
+        <div class="main">
+            <img src="pogi ko par.jpg">
+            <div class="abt">
+                <h2>Who I am</h2>
+<h5>Developer & Network Specialist</h5>
+                <p>I am an individual. I am my own person; a person who makes mistakes, laughs, cries, hurts, smiles and loves. I am who I am through my joys, sorrows, heartbreaks, happiness and my loses. Each step in my life and each moment that goes by make me up as an individual person.</p>
+            </div>
+        </div>
+
+        <!------Contant Me------>
+        <div class="contactme">
+            <p>Wanna Hire Me?</p>
+            <a target="_blank" class="Button" href="https://www.canva.com/design/DAEy2FvBZQw/IHUO9tCcwxv76Qg0pYAuDw/edit"><span></span>Download CV</a>
+        </div>
+
+        <!------Footer Start--------->
+        <footer>
+            <p>Ron Rick Furigay</p>
+            <P>For more Question, Follow me!</P>
+            <div class="Social">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100075281274260"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com/rronrik/"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i class="fas fa-envelope-open-text"></i></a>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var settings = document.getElementById("settings");
+
+        window.onscroll = function () {
+            if (window.pageYOffset >= settings.offsetTop) {
+                navbar.classList.add("sticky");
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
+
